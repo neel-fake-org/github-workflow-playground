@@ -1,7 +1,7 @@
 name: Close stale issues and PRs
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '30 1 * * *'
 
 jobs:
   stale:
@@ -14,5 +14,5 @@ jobs:
           stale-issue-label: 'stale'
           only-labels: 'awaiting-reply'
           exempt-issue-labels: 'triage'
-          days-before-stale: 0
-          days-before-close: 0
+          days-before-stale: 7
+          days-before-close: 7
