@@ -13,3 +13,4 @@ jobs:
         with:
           label: awaiting-reply
           only-if-label: support
+          debug: true
